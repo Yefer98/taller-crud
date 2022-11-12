@@ -1,0 +1,34 @@
+CREATE DATABASE LocionesAngelica,
+USE LocionesAngelica,
+
+CREATE TABLE InfoCliente
+(
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+Nom_Cliente VARCHAR(50) NOT NULL,
+Doc_Cliente VARCHAR(15) NOT NULL,
+Email_Cliente VARCHAR(50) NOT NULL,
+Dir_Cliente VARCHAR(15),
+Tel_Cliente VARCHAR(15) NOT NULL,
+)
+
+CREATE TABLE InfoProducto
+(
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+Cod_Referencia VARCHAR(20) NOT NULL,
+Cant_Productos INT NOT NULL,
+Valor_Producto MONEY NOT NULL,
+Nom_Producto VARCHAR(50) NOT NULL,
+)
+
+CREATE TABLE InfoProveedor
+(
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+Nom_Proveedor VARCHAR(50) NOT NULL,
+Doc_Proveedor VARCHAR(15) NOT NULL,
+Email_Proveedor VARCHAR(50) NOT NULL,
+Dir_Proveedor VARCHAR(15),
+Tel_Proveedor VARCHAR(15) NOT NULL,
+Nit_Proveedor VARCHAR(20) NOT NULL,
+Producto_Proveedor VARCHAR(50) NOT NULL,
+Desc_Empresa TEXT NOT NULL,
+)
