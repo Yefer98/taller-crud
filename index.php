@@ -1,37 +1,9 @@
-<?php include 'includes/header.php'; ?>
-<?php include 'includes/footer.php'; ?>
-
+<?php include 'includes/header.php' ?>
 <section>
-    <div><h1>Información Clientes</h1></div>
-    <div class="container">
-        <div class="form">
-            <form name="form" action="" method="post">
-                <input id="nomCliente" name="nomCliente" type="text" placeholder="Nombre Cliente">
-                <input id="docCliente" name="docCliente" type="text" placeholder="Documento Cliente">
-                <input id="emailCliente" name="emailCliente" type="text" placeholder="Correo Cliente">
-                <input id="dirCliente" name="dirCliente" type="text" placeholder="Dirección Cliente">
-                <input id="telCliente" name="telCliente" type="text" placeholder="Telefono Cliente">
-                <input id="addCliente" name="addCliente" type="submit" value="Agregar Cliente">
-            </form>
-        </div>
-        <div class="info">
-            <table>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Documento</th>
-                    <th>Correo</th>
-                    <th>Dirección</th>
-                    <th>Teléfono</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
+    <div class="container-inicio">
+        <h1>Taller crud php</h1>
+        <h2>Integrantes</h2>
+        <h2>Adrian Hernandez - Yeferson Idarraga</h2>
     </div>
 </section>
+<?php include 'includes/footer.php' ?>
