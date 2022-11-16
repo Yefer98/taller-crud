@@ -37,7 +37,7 @@
                         <td><?php echo $row['Email_Cliente'] ?></td>
                         <td><?php echo $row['Dir_Cliente'] ?></td>
                         <td><?php echo $row['Tel_Cliente'] ?></td>
-                        <td><a href=""><i class="fa-solid fa-trash"></i></a><a href=""><i class="fa-solid fa-file-pen"></i></a></td>
+                        <td><a href="includes/InfoCliente/updateCliente.php?id=<?= $row['id']; ?>"><i class="fa-solid fa-file-pen"></i></a><a href="includes/InfoCliente/deleteCliente.php?id=<?= $row['id']; ?>"><i class="fa-solid fa-trash"></i></a></td>
                     </tr>
                     <?php } ?>
                 </tbody>

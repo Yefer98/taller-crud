@@ -28,7 +28,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td><a href=""><i class="fa-solid fa-trash"></i></a><a href=""><i class="fa-solid fa-file-pen"></i></a></td>
+                        <td><a href=""><i class="fa-solid fa-file-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
                     </tr>
                 </tbody>
             </table>

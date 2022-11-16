@@ -45,7 +45,7 @@ body{
 .title{
     background-color: rgba(0, 0, 0, 0.672);
     text-align: center;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 20px 10px 20px;
     margin-top: 20px;
     font-size: 20px;
     border-radius: 20px 0px 20px 0px;
@@ -74,7 +74,8 @@ body{
     border-top: 5px solid white;
 }
 .container-inicio img{
-    width: 600px;
+    width: 450px;
+    height: 300px;
     box-shadow: 5px 5px 5px 5px black;
     border-radius: 50%;
 }
@@ -90,7 +91,7 @@ body{
     font-size: 25px;
 }
 .form{
-    padding: 5px;
+    padding: 10px;
     background-color: rgb(47, 47, 47);
     border-radius: 10px;
     box-shadow: 0px 0px 10px black;
@@ -98,9 +99,15 @@ body{
 .form form{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
 }
+.tcont{
+    display: flex;
+    gap: 10px;
+}
 input{
+    width: 100%;
     background-color: rgb(201, 201, 201);
     outline: none;
     border: none;
@@ -133,6 +140,13 @@ textarea{
     transition: .7s ease-in-out;
     background-color: rgb(0, 0, 38);
     box-shadow: 0px 0px 10px rgb(0, 0, 99);
+}
+.b2{
+    background-color: rgb(84, 0, 0);
+}
+.b2:hover{
+    background-color: rgb(130, 0, 0);
+    box-shadow: 0px 0px 10px rgb(201, 0, 0);
 }
 .info{
     width: 70%;
