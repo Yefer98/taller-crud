@@ -9,9 +9,9 @@ if(isset($_POST{'addCliente'})){
     $direccion=$_POST['dirCliente'];
     $telefono=$_POST['telCliente'];
 
-    $create="INSERT INTO InfoCliente (id, nombre, direccion, telefono, correo) VALUES ('$id', '$nombre', '$direccion', '$telefono', '$correo')";
+    $create="INSERT INTO info_cliente (id, Nom_Cliente,	Doc_Cliente, Email_Cliente,	Dir_Cliente, Tel_Cliente) VALUES ('$id', '$nombre', '$documento', '$correo', '$direccion', '$telefono')";
 
-    if(mysqli_query($connection, $create)){
-        header('Location: index.php');
+    if(mysqli_query($connect, $create)){
+        header('Location: ../../InfoCliente.php');
     }
  }

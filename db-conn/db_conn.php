@@ -2,10 +2,10 @@
 $host = 'localhost';
 $user = 'root';
 $password = '';
-$dbName = 'db.sql';
+$dbName = 'lociones_angelica';
 
 try {
-    $conn = mysqli_connect($host, $user, $password, $dbName);
+    $connect = mysqli_connect($host, $user, $password, $dbName);
   } catch (ErrorException $error) {
     $error->getMessage();
     echo $error;

@@ -4,23 +4,22 @@
     <div class="container">
         <div class="form">
             <form name="form" action="" method="post">
-                <input id="nomCliente" name="nomCliente" type="text" placeholder="Nombre Cliente">
-                <input id="docCliente" name="docCliente" type="text" placeholder="Documento Cliente">
-                <input id="emailCliente" name="emailCliente" type="text" placeholder="Correo Cliente">
-                <input id="dirCliente" name="dirCliente" type="text" placeholder="Dirección Cliente">
-                <input id="telCliente" name="telCliente" type="text" placeholder="Telefono Cliente">
-                <input id="addCliente" name="addCliente" type="submit" value="Agregar Cliente" class="b">
+                <input id="codRef" name="codRef" type="text" placeholder="Codigo de Referencia">
+                <input id="cantProd" name="cantProd" type="text" placeholder="Cantidad de Productos">
+                <input id="valProd" name="valProd" type="text" placeholder="Valor Productos">
+                <input id="nomProd" name="nomProd" type="text" placeholder="Nombre Producto">
+                <input id="addProd" name="addProd" type="submit" value="Agregar Producto" class="b">
             </form>
         </div>
         <div class="info">
             <table>
                 <thead>
                     <tr>
-                        <th>Nombre</th>
-                        <th>Documento</th>
-                        <th>Correo</th>
-                        <th>Dirección</th>
-                        <th>Teléfono</th>
+                        <th>Codigo Referencia</th>
+                        <th>Cantidad Productos</th>
+                        <th>Valor Productos</th>
+                        <th>Nombre Producto</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -29,8 +28,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><a href=""><i class="fa-solid fa-trash"></i></a><a href=""><i class="fa-solid fa-file-pen"></i></a></td>
                     </tr>
                 </tbody>
             </table>

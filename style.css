@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+body{
+    background-image: url("/img/bg-InfoClientes.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(24, 24, 24);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    width: 90%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 2px solid rgb(0, 47, 67);
+}
+.menu h1{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.link{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.link a{
+    font-size: 20px;
+    border: none;
+    text-decoration: none;
+}
+.link a:hover{
+    border-bottom: 2px solid white;
+}
+.title{
+    background-color: rgba(0, 0, 0, 0.672);
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 20px 0px 20px 0px;
+}
+.container{
+    width: 90vw;
+    margin-top: 20px;
+    padding: 0px 10px 0px 10px;
+    gap: 10%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.container-inicio{
+    background-color: rgba(0, 4, 44, 0.665);
+    width: 100vw;
+    height: 60vh;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    gap: 100px;
+    text-transform: uppercase;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+}
+.container-inicio img{
+    width: 600px;
+    box-shadow: 5px 5px 5px 5px black;
+    border-radius: 50%;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-shadow: 3px 3px 0px black;
+}
+.text h2{
+    font-size: 25px;
+}
+.form{
+    padding: 5px;
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+input{
+    background-color: rgb(201, 201, 201);
+    outline: none;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+textarea{
+    background-color: rgb(201, 201, 201);
+    outline: none;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    resize: none;
+}
+.b{
+    margin-top: 10px;
+    background-color: rgba(0, 0, 138, 0.755);
+    color: white;
+    border: none;
+    border-radius: 15px 0px 15px 0px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .7s ease-in-out;
+}
+.b:hover{
+    transition: .7s ease-in-out;
+    background-color: rgb(0, 0, 38);
+    box-shadow: 0px 0px 10px rgb(0, 0, 99);
+}
+.info{
+    width: 70%;
+}
+.info table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.info tr{
+    border-top: 1px solid rgb(33, 33, 33);
+}
+.info tr:hover{
+    background-color: rgba(255, 255, 255, 0.247);
+}
+.info thead tr{
+    background-color: black;
+}
+.info thead th{
+    font-size: 20px;
+    padding: 5px 0px 5px 0px;
+}
+.info tbody tr{
+    background-color: rgba(255, 255, 255, 0.592);
+    font-size: 18px;
+    text-align: center;
+}
+.info td{
+    color: black;
+}
+.contain{
+    justify-content: space-between;
+    gap: 0%;
+}
+.info2{
+    width: 75%;
+}
+.info2 table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.info2 thead tr{
+    background-color: black;
+    border-top: 1px solid blue;
+}
+.info2 thead th{
+    font-size: 20px;
+    padding: 5px 0px 5px 0px;
+}
+.info2 tbody tr{
+    background-color: rgba(255, 255, 255, 0.592);
+    font-size: 18px;
+    text-align: center;
+}
+.info2 td{
+    color: black;
+}
+.fa-solid{
+    padding: 5px 5px 5px 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.fa-solid:hover{
+    transition: .7s ease-in-out;
+    filter: brightness(3);
+    -webkit-text-stroke: .2px white;
+}
+.fa-trash{
+    color: rgb(177, 0, 0);
+}
+.fa-file-pen{
+    color: rgb(0, 0, 104);
+}
+
+
+
