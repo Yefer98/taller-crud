@@ -47,7 +47,7 @@
                         <td><?php echo $row['Nit_Proveedor'] ?></td>
                         <td><?php echo $row['Producto_Proveedor'] ?></td>
                         <td><?php echo $row['Desc_Empresa'] ?></td>
-                        <td><a href=""><i class="fa-solid fa-file-pen"></i></a><a href="includes/InfoProveedor/deleteProveedor.php?id=<?= $row['id']; ?>"><i class="fa-solid fa-trash"></i></a></td>
+                        <td><a href="includes/InfoProveedor/updateProveedor.php?id=<?= $row['id'] ?>"><i class="fa-solid fa-file-pen"></i></a><a href="includes/InfoProveedor/deleteProveedor.php?id=<?= $row['id']; ?>"><i class="fa-solid fa-trash"></i></a></td>
                     </tr>
                     <?php } ?>
                 </tbody>
