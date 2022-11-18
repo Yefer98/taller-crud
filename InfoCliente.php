@@ -3,13 +3,19 @@
     <div class="title"><h1>Información Clientes</h1></div>
     <div class="container">
         <div class="form">
-            <form name="form" action="includes/InfoCliente/createCliente.php" method="post">
+            <form id="form" name="form" action="includes/InfoCliente/createCliente.php" method="post">
                 <input id="nomCliente" name="nomCliente" type="text" placeholder="Nombre Cliente">
+                <p id="nom"></p>
                 <input id="docCliente" name="docCliente" type="text" placeholder="Documento Cliente">
+                <p id="doc"></p>
                 <input id="emailCliente" name="emailCliente" type="text" placeholder="Correo Cliente">
+                <p id="email"></p>
                 <input id="dirCliente" name="dirCliente" type="text" placeholder="Dirección Cliente">
+                <p id="dir"></p>
                 <input id="telCliente" name="telCliente" type="text" placeholder="Telefono Cliente">
+                <p id="tel"></p>
                 <input id="addCliente" name="addCliente" type="submit" value="Agregar Cliente" class="b">
+                <p id="resultado"></p>
             </form>
         </div>
         <div class="info">
@@ -45,4 +51,5 @@
         </div>
     </div>
 </section>
+<script src="js/validacionCliente.js"></script>
 <?php include 'includes/footer.php' ?>

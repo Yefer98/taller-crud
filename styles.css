@@ -220,6 +220,11 @@ textarea{
 .fa-file-pen{
     color: rgb(0, 0, 104);
 }
-
+.correcto{
+    background-color: green;
+}
+.incorrecto{
+    background-color: red;
+}
 
 
