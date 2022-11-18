@@ -3,11 +3,15 @@
     <div class="title"><h1>Información Productos</h1></div>
     <div class="container">
         <div class="form">
-            <form name="form" action="includes/InfoProducto/createProducto.php" method="post">
+            <form id="form" name="form" action="includes/InfoProducto/createProducto.php" method="post">
                 <input id="codRef" name="codRef" type="text" placeholder="Codigo de Referencia">
+                <p id="pcod"></p>
                 <input id="cantProd" name="cantProd" type="text" placeholder="Cantidad de Productos">
+                <p id="pcant"></p>
                 <input id="valProd" name="valProd" type="text" placeholder="Valor Productos">
+                <p id="pval"></p>
                 <input id="nomProd" name="nomProd" type="text" placeholder="Nombre Producto">
+                <p id="pnom"></p>
                 <input id="addProd" name="addProd" type="submit" value="Agregar Producto" class="b">
             </form>
         </div>
@@ -42,4 +46,5 @@
         </div>
     </div>
 </section>
+<script src="./js/validacionProducto.js"></script>
 <?php include 'includes/footer.php' ?>

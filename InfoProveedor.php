@@ -3,16 +3,24 @@
     <div class="title"><h1>Información Proveedores</h1></div>
     <div class="container contain">
         <div class="form">
-            <form name="form" action="includes/InfoProveedor/createProveedor.php" method="post">
+            <form id="form" name="form" action="includes/InfoProveedor/createProveedor.php" method="post">
                 <input id="nomProv" name="nomProv" type="text" placeholder="Nombre Proveedor">
+                <p id="pnom"></p>
                 <input id="docProv" name="docProv" type="text" placeholder="Documento Proveedor">
+                <p id="pdoc"></p>
                 <input id="emailProv" name="emailProv" type="text" placeholder="Correo Proveedor">
+                <p id="pemail"></p>
                 <input id="dirProv" name="dirProv" type="text" placeholder="Dirección Proveedor">
+                <p id="pdir"></p>
                 <input id="telProv" name="telProv" type="text" placeholder="Teléfono Proveedor">
+                <p id="ptel"></p>
                 <input id="nitProv" name="nitProv" type="text" placeholder="Nit Proveedor">
+                <p id="pnit"></p>
                 <input id="prodProv" name="prodProv" type="text" placeholder="Producto Proveedor">
+                <p id="pprod"></p>
                 <textarea id="descEmp" name="descEmp" type="text" cols="40"
                 rows="5" placeholder="Descripción Empresa"></textarea>
+                <p id="pdesc"></p>
                 <input id="addProveedor" name="addProveedor" type="submit" value="Agregar Proveedor" class="b">
             </form>
         </div>
@@ -55,4 +63,5 @@
         </div>
     </div>
 </section>
+<script src="js/validacionProveedor.js"></script>
 <?php include 'includes/footer.php' ?>

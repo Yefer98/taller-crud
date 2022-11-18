@@ -5,7 +5,7 @@ const pnom = document.querySelector('#nom');
 const doc = document.getElementById('docCliente');
 const pdoc = document.querySelector('#doc');
 const correo = document.getElementById('emailCliente');
-const pcorreo = documequerySelector('#email');
+const pcorreo = document.querySelector('#email');
 const dir = document.getElementById('dirCliente');
 const pdir = document.querySelector('#dir');
 const tel = document.getElementById('telCliente');
@@ -14,10 +14,10 @@ const add = document.getElementById('addCliente');
 
 let textoCorto = /^[a-zA-ZÀ-ÿ\s]{1,50}$/;
 let textoLargo = /^[a-zA-ZÀ-ÿ\s]{1,200}$/;
-let textoYnum = /^[a-zA-Z0-9]{1,30}$/;
+let textoYnum = /^[a-zA-Z0-9#-\s]{1,30}$/;
 let numero = /^[\d+]{1,50}$/;
 let decimal = /^[.\d+]{1,50}$/;
-let email = /^/([A-Za-z]|[0-9])+$;
+let email = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
 
 const validacionForm = (e) => {
     switch(e.target.name){
@@ -85,13 +85,7 @@ inputs.forEach((input)=>{
 });
 
 form.addEventListener('submit', (e) =>{
-    const nom = document.getElementById('nomCliente');
-    // const doc = document.getElementById('docCliente');
-    // const correo = document.getElementById('emailCliente');
-    // const dir = document.getElementById('dirCliente');
-    // const tel = document.getElementById('telCliente');
-    const resultado = document.getElementById('resultado');
-    resultado.textContent = `${nom.value} su registro se completó satisfactoriamente.`;
+    alert(nom.value+' su registro se completó satisfactoriamente.');
 });
 
 
