@@ -69,11 +69,11 @@ const validacionForm = (e) => {
             if(numero.test(e.target.value)){
                 tel.classList.remove('incorrecto');
                 tel.classList.add('correcto');
-                ptel.setCustomValidity("");
+                ptel.textContent("");
             }else{
                 tel.classList.add('incorrecto');
                 tel.classList.remove('correcto');
-                ptel.setCustomValidity("Solo se permiten números.");
+                ptel.textContent("Solo se permiten números.");
             }
             break;
         }
@@ -83,3 +83,4 @@ inputs.forEach((input)=>{
     input.addEventListener('keyup', validacionForm);
     input.addEventListener('blur', validacionForm);
 });
+

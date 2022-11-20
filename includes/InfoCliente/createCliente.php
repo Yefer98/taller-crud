@@ -10,7 +10,7 @@ if(isset($_POST{'addCliente'})){
     $telefono=$_POST['telCliente'];
 
     $create="INSERT INTO info_cliente (id, Nom_Cliente,	Doc_Cliente, Email_Cliente,	Dir_Cliente, Tel_Cliente) VALUES ('$id', '$nombre', '$documento', '$correo', '$direccion', '$telefono')";
-
+    
     if(mysqli_query($connect, $create)){
         header('Location: ../../InfoCliente.php');
     }
