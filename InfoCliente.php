@@ -3,19 +3,19 @@
     <div class="title"><h1>Información Clientes</h1></div>
     <div class="container">
         <div class="form">
+            <h1>REGISTRO CLIENTE</h1>
             <form id="form" name="form" action="includes/InfoCliente/createCliente.php" method="post">
-                <input id="nomCliente" name="nomCliente" type="text" placeholder="Nombre Cliente">
+                <input id="nomCliente" name="nomCliente" type="text" placeholder="Nombre Cliente" required>
                 <p id="nom"></p>
-                <input id="docCliente" name="docCliente" type="text" placeholder="Documento Cliente">
+                <input id="docCliente" name="docCliente" type="text" placeholder="Documento Cliente" required>
                 <p id="doc"></p>
-                <input id="emailCliente" name="emailCliente" type="text" placeholder="Correo Cliente">
+                <input id="emailCliente" name="emailCliente" type="text" placeholder="Correo Cliente" required>
                 <p id="email"></p>
                 <input id="dirCliente" name="dirCliente" type="text" placeholder="Dirección Cliente">
                 <p id="dir"></p>
                 <input id="telCliente" name="telCliente" type="text" placeholder="Telefono Cliente">
                 <p id="tel"></p>
                 <input id="addCliente" name="addCliente" type="submit" value="Agregar Cliente" class="b">
-                <p id="resultado"></p>
             </form>
         </div>
         <div class="info">

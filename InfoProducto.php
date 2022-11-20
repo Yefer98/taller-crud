@@ -3,14 +3,15 @@
     <div class="title"><h1>Información Productos</h1></div>
     <div class="container">
         <div class="form">
+            <h1>REGISTRO PRODUCTO</h1>
             <form id="form" name="form" action="includes/InfoProducto/createProducto.php" method="post">
-                <input id="codRef" name="codRef" type="text" placeholder="Codigo de Referencia">
+                <input id="codRef" name="codRef" type="text" placeholder="Codigo de Referencia" required>
                 <p id="pcod"></p>
-                <input id="cantProd" name="cantProd" type="text" placeholder="Cantidad de Productos">
+                <input id="cantProd" name="cantProd" type="text" placeholder="Cantidad de Productos" required>
                 <p id="pcant"></p>
-                <input id="valProd" name="valProd" type="text" placeholder="Valor Productos">
+                <input id="valProd" name="valProd" type="text" placeholder="Valor Productos" required>
                 <p id="pval"></p>
-                <input id="nomProd" name="nomProd" type="text" placeholder="Nombre Producto">
+                <input id="nomProd" name="nomProd" type="text" placeholder="Nombre Producto" required>
                 <p id="pnom"></p>
                 <input id="addProd" name="addProd" type="submit" value="Agregar Producto" class="b">
             </form>

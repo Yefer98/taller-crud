@@ -3,20 +3,21 @@
     <div class="title"><h1>Información Proveedores</h1></div>
     <div class="container contain">
         <div class="form">
+            <h1>REGISTRO PROVEEDOR</h1>
             <form id="form" name="form" action="includes/InfoProveedor/createProveedor.php" method="post">
-                <input id="nomProv" name="nomProv" type="text" placeholder="Nombre Proveedor">
+                <input id="nomProv" name="nomProv" type="text" placeholder="Nombre Proveedor" required>
                 <p id="pnom"></p>
-                <input id="docProv" name="docProv" type="text" placeholder="Documento Proveedor">
+                <input id="docProv" name="docProv" type="text" placeholder="Documento Proveedor" required>
                 <p id="pdoc"></p>
-                <input id="emailProv" name="emailProv" type="text" placeholder="Correo Proveedor">
+                <input id="emailProv" name="emailProv" type="text" placeholder="Correo Proveedor" required>
                 <p id="pemail"></p>
                 <input id="dirProv" name="dirProv" type="text" placeholder="Dirección Proveedor">
                 <p id="pdir"></p>
                 <input id="telProv" name="telProv" type="text" placeholder="Teléfono Proveedor">
                 <p id="ptel"></p>
-                <input id="nitProv" name="nitProv" type="text" placeholder="Nit Proveedor">
+                <input id="nitProv" name="nitProv" type="text" placeholder="Nit Proveedor" required>
                 <p id="pnit"></p>
-                <input id="prodProv" name="prodProv" type="text" placeholder="Producto Proveedor">
+                <input id="prodProv" name="prodProv" type="text" placeholder="Producto Proveedor" required>
                 <p id="pprod"></p>
                 <textarea id="descEmp" name="descEmp" type="text" cols="40"
                 rows="5" placeholder="Descripción Empresa"></textarea>

@@ -69,11 +69,11 @@ const validacionForm = (e) => {
             if(numero.test(e.target.value)){
                 tel.classList.remove('incorrecto');
                 tel.classList.add('correcto');
-                ptel.textContent="";
+                ptel.setCustomValidity("");
             }else{
                 tel.classList.add('incorrecto');
                 tel.classList.remove('correcto');
-                ptel.textContent="Solo se permiten números.";
+                ptel.setCustomValidity("Solo se permiten números.");
             }
             break;
         }
@@ -83,9 +83,3 @@ inputs.forEach((input)=>{
     input.addEventListener('keyup', validacionForm);
     input.addEventListener('blur', validacionForm);
 });
-
-form.addEventListener('submit', (e) =>{
-    alert(nom.value+' su registro se completó satisfactoriamente.');
-});
-
-
