@@ -58,22 +58,32 @@ if(isset($_POST['update'])){
     <div class="title"><h1>Modificación Información Proveedores</h1></div>
         <div class="container">
             <div class="form">
-                <form name="form" action="updateProveedor.php?id=<?= $_GET['id'] ?>" method="post">
+                <form id="form" name="form" action="updateProveedor.php?id=<?= $_GET['id'] ?>" method="post">
                     <input id="nomProv" name="nomProv" type="text" placeholder="Nombre Proveedor" value="<?php echo $nombre ?>">
+                    <p id="pnom"></p>
                     <input id="docProv" name="docProv" type="text" placeholder="Documento Proveedor" value="<?php echo $documento ?>">
+                    <p id="pdoc"></p>
                     <input id="emailProv" name="emailProv" type="text" placeholder="Correo Proveedor" value="<?php echo $correo ?>">
+                    <p id="pemail"></p>
                     <input id="dirProv" name="dirProv" type="text" placeholder="Dirección Proveedor" value="<?php echo $direccion ?>">
+                    <p id="pdir"></p>
                     <input id="telProv" name="telProv" type="text" placeholder="Teléfono Proveedor" value="<?php echo $telefono ?>">
+                    <p id="ptel"></p>
                     <input id="nitProv" name="nitProv" type="text" placeholder="Nit Proveedor" value="<?php echo $nit ?>">
+                    <p id="pnit"></p>
                     <input id="prodProv" name="prodProv" type="text" placeholder="Producto Proveedor" value="<?php echo $prod ?>">
+                    <p id="pprod"></p>
                     <textarea id="descEmp" name="descEmp" type="text" cols="40"
                     rows="5" placeholder="Descripción Empresa"><?php echo $desc ?></textarea>
+                    <p id="pdesc"></p>
                     <div class="tcont">
                     <input id="update" name="update" type="submit" value="Actualizar Proveedor" class="b">
                     <a href="../../InfoProveedor.php"><input class="b b2" type="button" value="Cancelar"></a>
                     </div>
+                    <p id="adv"></p>
                 </form>
             </div>
         </div>
+    <script src="../../js/validacionProveedor.js"></script>
 </body>
 </html>

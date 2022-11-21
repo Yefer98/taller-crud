@@ -51,17 +51,23 @@ if(isset($_POST['update'])){
     <div class="title"><h1>Modificación Información Productos</h1></div>
     <div class="container">
         <div class="form">
-            <form name="form" action="updateProducto.php?id=<?= $_GET['id'] ?>" method="post">
+            <form id="form" name="form" action="updateProducto.php?id=<?= $_GET['id'] ?>" method="post">
                 <input id="codRef" name="codRef" type="text" placeholder="Codigo de Referencia" value="<?php echo $referencia ?>">
+                <p id="pcod"></p>
                 <input id="cantProd" name="cantProd" type="text" placeholder="Cantidad de Productos" value="<?php echo $cantidad ?>">
+                <p id="pcant"></p>
                 <input id="valProd" name="valProd" type="text" placeholder="Valor Productos" value="<?php echo $valor ?>">
+                <p id="pval"></p>
                 <input id="nomProd" name="nomProd" type="text" placeholder="Nombre Producto" value="<?php echo $nombre ?>">
+                <p id="pnom"></p>
                 <div class="tcont">
                 <input id="update" name="update" type="submit" value="Actualizar Producto" class="b">
                 <a href="../../InfoProducto.php"><input class="b b2" type="button" value="Cancelar"></a>
                 </div>
+                <p id="adv"></p>
             </form>
         </div>
-    </div>   
+    </div>  
+    <script src="../../js/validacionProducto.js"></script> 
 </body>
 </html>

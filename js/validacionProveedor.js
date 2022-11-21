@@ -127,3 +127,63 @@ inputs.forEach((input)=>{
     input.addEventListener('keyup', validacionProv);
     input.addEventListener('blur', validacionProv);
 });
+
+form.addEventListener('submit', (e) => {
+    if(!textoCorto.test(nomp.value)){
+        e.preventDefault();
+        nomp.title = `El nombre "${nomp.value}" no cumple los parámetros indicados.`
+        adv.textContent = "Los datos marcados con rojo no son válidos."
+    }else{
+        nomp.title = ``
+    };
+    if(!numero.test(docp.value)){
+        e.preventDefault();
+        docp.title = `El documento "${docp.value}" no cumple los parámetros indicados.`
+        adv.textContent = "Los datos marcados con rojo no son válidos."
+    }else{
+        docp.title = ``
+    };
+    if(!email.test(correop.value)){
+        e.preventDefault();
+        correop.title = `El correo "${correop.value}" no cumple los parámetros indicados.`
+        adv.textContent = "Los datos marcados con rojo no son válidos."
+    }else{
+        correop.title = ``
+    };
+    if(!textoYnum.test(dirp.value)){
+        e.preventDefault();
+        dirp.title = `La dirección "${dirp.value}" no cumple los parámetros indicados.`
+        adv.textContent = "Los datos marcados con rojo no son válidos."
+    }else{
+        dirp.title = ``
+    };
+    if(!numero.test(telp.value)){
+        e.preventDefault();
+        telp.title = `El teléfono "${telp.value}" no cumple los parámetros indicados.`
+        adv.textContent = "Los datos marcados con rojo no son válidos."
+    }else{
+        telp.title = ``
+    };
+    if(!numero.test(nitp.value)){
+        e.preventDefault();
+        nitp.title = `El nit "${nitp.value}" no cumple los parámetros indicados.`
+        adv.textContent = "Los datos marcados con rojo no son válidos."
+    }else{
+        nitp.title = ``
+    };
+    if(!textoCorto.test(prodp.value)){
+        e.preventDefault();
+        prodp.title = `El producto "${prodp.value}" no cumple los parámetros indicados.`
+        adv.textContent = "Los datos marcados con rojo no son válidos."
+    }else{
+        prodp.title = ``
+    };
+    if(!textoLargo.test(descp.value)){
+        e.preventDefault();
+        descp.title = `La descripción "${descp.value}" no cumple los parámetros indicados.`
+        adv.textContent = "Los datos marcados con rojo no son válidos."
+    }else{
+        descp.title = ``
+    };
+});
+

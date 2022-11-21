@@ -52,18 +52,25 @@ if(isset($_POST['update'])){
     <div class="title"><h1>Modificación Información Clientes</h1></div>
         <div class="container">
             <div class="form">
-                <form name="form" action="updateCliente.php?id=<?= $_GET['id'] ?>" method="post">
+                <form id="form" name="form" action="updateCliente.php?id=<?= $_GET['id'] ?>" method="post">
                     <input id="nomCliente" name="nomCliente" type="text" placeholder="Nombre Cliente" value="<?php echo $nombre ?>">
+                    <p id="nom"></p>
                     <input id="docCliente" name="docCliente" type="text" placeholder="Documento Cliente" value="<?php echo $documento ?>">
+                    <p id="doc"></p>
                     <input id="emailCliente" name="emailCliente" type="text" placeholder="Correo Cliente" value="<?php echo $correo ?>">
+                    <p id="email"></p>
                     <input id="dirCliente" name="dirCliente" type="text" placeholder="Dirección Cliente" value="<?php echo $direccion ?>">
+                    <p id="dir"></p>
                     <input id="telCliente" name="telCliente" type="text" placeholder="Telefono Cliente" value="<?php echo $telefono ?>">
+                    <p id="tel"></p>
                     <div class="tcont">
-                    <input id="update" name="update" type="submit" value="Actualizar Cliente" class="b">
-                    <a href="../../InfoCliente.php"><input class="b b2" type="button" value="Cancelar"></a>
+                        <input id="update" name="update" type="submit" value="Actualizar Cliente" class="b">
+                        <a href="../../InfoCliente.php"><input class="b b2" type="button" value="Cancelar"></a>
                     </div>
+                    <p id="adv"></p>
                 </form>
             </div>
-        </div>    
+        </div>  
+    <script src="../../js/validacionCliente.js"></script>  
 </body>
 </html>

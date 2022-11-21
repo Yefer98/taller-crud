@@ -16,6 +16,7 @@
                 <input id="telCliente" name="telCliente" type="text" placeholder="Telefono Cliente">
                 <p id="tel"></p>
                 <input id="addCliente" name="addCliente" type="submit" value="Agregar Cliente" class="b">
+                <p id="adv"></p>
             </form>
         </div>
         <div class="info">

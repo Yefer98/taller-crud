@@ -67,3 +67,35 @@ inputs.forEach((input)=>{
     input.addEventListener('keyup', validacionProd);
     input.addEventListener('blur', validacionProd);
 });
+
+form.addEventListener('submit', (e) => {
+    if(!numero.test(cod.value)){
+        e.preventDefault();
+        cod.title = `El código "${cod.value}" no cumple los parámetros indicados.`
+        adv.textContent = "Los datos marcados con rojo no son válidos."
+    }else{
+        cod.title = ``
+    };
+    if(!numero.test(cant.value)){
+        e.preventDefault();
+        cant.title = `La cantidad "${cant.value}" no cumple los parámetros indicados.`
+        adv.textContent = "Los datos marcados con rojo no son válidos."
+    }else{
+        cant.title = ``
+    };
+    if(!decimal.test(val.value)){
+        e.preventDefault();
+        val.title = `El valor "${val.value}" no cumple los parámetros indicados.`
+        adv.textContent = "Los datos marcados con rojo no son válidos."
+    }else{
+        val.title = ``
+    };
+    if(!textoCorto.test(nom.value)){
+        e.preventDefault();
+        nom.title = `El nombre "${nom.value}" no cumple los parámetros indicados.`
+        adv.textContent = "Los datos marcados con rojo no son válidos."
+    }else{
+        nom.title = ``
+    };
+});
+

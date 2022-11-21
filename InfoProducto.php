@@ -14,6 +14,7 @@
                 <input id="nomProd" name="nomProd" type="text" placeholder="Nombre Producto" required>
                 <p id="pnom"></p>
                 <input id="addProd" name="addProd" type="submit" value="Agregar Producto" class="b">
+                <p id="adv"></p>
             </form>
         </div>
         <div class="info">

@@ -23,6 +23,7 @@
                 rows="5" placeholder="Descripción Empresa"></textarea>
                 <p id="pdesc"></p>
                 <input id="addProveedor" name="addProveedor" type="submit" value="Agregar Proveedor" class="b">
+                <p id="adv"></p>
             </form>
         </div>
         <div class="info2">
